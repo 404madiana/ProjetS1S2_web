@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Nano_site/static/css/main.f9eb6cbe.css",
+    "main.js": "/Nano_site/static/js/main.6a0036d7.js",
+    "static/js/453.5e90af72.chunk.js": "/Nano_site/static/js/453.5e90af72.chunk.js",
+    "static/media/banner.jpg": "/Nano_site/static/media/banner.eee65f834a56f504a3c7.jpg",
+    "static/media/STREZY BREAK REGULAR.otf": "/Nano_site/static/media/STREZY BREAK REGULAR.2d8577609e1128bf9c33.otf",
+    "static/media/Nano.png": "/Nano_site/static/media/Nano.bba4e45e075f0f458734.png",
+    "static/media/outfit-latin-400-normal.woff": "/Nano_site/static/media/outfit-latin-400-normal.72f8b6c4166f1d2268cf.woff",
+    "static/media/outfit-latin-400-normal.woff2": "/Nano_site/static/media/outfit-latin-400-normal.d5e5803d0c85b54aaaa1.woff2",
+    "static/media/outfit-latin-ext-400-normal.woff": "/Nano_site/static/media/outfit-latin-ext-400-normal.906838c3d2734b257465.woff",
+    "static/media/outfit-latin-ext-400-normal.woff2": "/Nano_site/static/media/outfit-latin-ext-400-normal.a15560ed108017192e3a.woff2",
+    "index.html": "/Nano_site/index.html",
+    "main.f9eb6cbe.css.map": "/Nano_site/static/css/main.f9eb6cbe.css.map",
+    "main.6a0036d7.js.map": "/Nano_site/static/js/main.6a0036d7.js.map",
+    "453.5e90af72.chunk.js.map": "/Nano_site/static/js/453.5e90af72.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9eb6cbe.css",
+    "static/js/main.6a0036d7.js"
+  ]
+}
