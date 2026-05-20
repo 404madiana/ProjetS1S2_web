@@ -11,7 +11,7 @@ export default function Content(){
     return(
 
         <Container maxWidth="false" disableGutters>
-
+          
           <Box display='flex' justifyContent= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary}>
             <BannerContent>
               <BannerText>Become the ultimate antibody. No more pills. The best cure... is you.</BannerText>

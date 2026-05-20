@@ -28,16 +28,23 @@ function App() {
 
           {/*AppBar*/}
           <Appbar />
-          {/*Banner*/}
+          {/*Banner - Fixed background*/}
           <Banner />
 
-          <Routes>
-            <Route path='/' element={<Accueil />} />
-            <Route path='/download' element={<Download />} />
-            <Route path='/tutorials' element={<Tutos />} />
-            <Route path='/wiki' element={<Wiki />} />
-            <Route path='/chromo_team' element={<Credits />} />
-          </Routes>
+          <Container maxWidth="false" disableGutters
+            sx={{
+              position: 'relative',
+              zIndex: 1,
+              background: "#fff"
+            }}>
+            <Routes>
+              <Route path='/' element={<Accueil />} />
+              <Route path='/download' element={<Download />} />
+              <Route path='/tutorials' element={<Tutos />} />
+              <Route path='/wiki' element={<Wiki />} />
+              <Route path='/chromo_team' element={<Credits />} />
+            </Routes>
+          </Container>
         </BrowserRouter>
           
       </Container>
