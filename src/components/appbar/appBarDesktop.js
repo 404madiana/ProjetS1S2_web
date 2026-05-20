@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
 
 // mascotte du jeu :)
-import ChromIcon from "../../assets/chrom.png";
+import ChromIcon from "../../assets/img/chrom.png";
 
 import { AppbarHeader, NavBox } from '../../styles/appbar';
 // import NavList from '../../styles/appbar';

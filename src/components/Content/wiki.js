@@ -1,7 +1,7 @@
 import {  Box, Container,  Typography, useTheme } from '@mui/material';
 import { Colors } from "../../styles/theme";
 import { BannerContent, BannerText,  } from '../../styles/banner';
-import img2 from "../../assets/Nano.png"
+import img2 from "../../assets/img/Nano.png"
 import Button from '@mui/material/Button';
 
 

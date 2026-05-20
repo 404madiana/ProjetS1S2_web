@@ -1,14 +1,11 @@
 import { Box, Container, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { BannerContainer, BannerContent, BannerTitle, BannerImage } from "../../styles/banner";
-import travaux from '../../assets/banner.jpg';
+import travaux from '../../assets/img/banner.jpg';
 import { Colors } from "../../styles/theme";
 
 export default function Banner(){
-
     const theme = useTheme();
-
-
-
+    
     return(
 
         <BannerContainer>

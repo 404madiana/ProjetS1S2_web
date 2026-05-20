@@ -1,8 +1,8 @@
 import {  Box, Container,  Typography, useTheme } from '@mui/material';
 import { Colors } from "../../styles/theme";
 import { BannerContent, BannerText,  } from '../../styles/banner';
-import imgTravaux from "../../assets/travaux.png"
-import img2 from "../../assets/Nano.png"
+import imgTravaux from "../../assets/img/travaux.png"
+import img2 from "../../assets/img/Nano.png"
 import Button from '@mui/material/Button';
 
 
