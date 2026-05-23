@@ -3,6 +3,7 @@ import { Colors } from "../../styles/theme";
 import { BannerContent, BannerText,  } from '../../styles/banner';
 import imgTravaux from "../../assets/img/travaux.png"
 import img2 from "../../assets/img/Nano.png"
+import banner from "../../assets/img/banner.jpg"
 import Button from '@mui/material/Button';
 
 
@@ -12,8 +13,25 @@ export default function Content(){
 
         <Container maxWidth="false" disableGutters>
           
-          <Box display='flex' justifyContent= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary}>
-            <BannerContent>
+          <Box display='flex' justifyContent= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary} sx={{
+            backgroundImage: `url(${banner})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            position: 'relative',
+            '&::before': {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: Colors.primary,
+              backdropFilter: 'blur(10px)',
+              zIndex: 1,
+            }
+          }}>
+            <BannerContent sx={{ position: 'relative', zIndex: 2 }}>
               <BannerText>Become the ultimate antibody. No more pills. The best cure... is you.</BannerText>
             </BannerContent>
             {/* --- LE DIVIDER SVG VAGUE --- */}
@@ -27,7 +45,7 @@ export default function Content(){
                 width: '100%',
                 height: 'auto', // Ajuster la hauteur pour rendre la vague plus/moins prononcée
                 display: 'block', // Important pour éviter les marges fantômes
-                zIndex: 0,
+                zIndex: 2,
               }}>
               {/* Ce chemin (path) dessine la courbe. Le "fill" doit matcher la section du bas */}
               <path
@@ -74,14 +92,31 @@ export default function Content(){
             </Box>
             
           </Box>
-          <Box display='flex' alignItems= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary}>
-            <Box sx={{flex: 0, alignItems: 'initial'}}>
+          <Box display='flex' alignItems= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary} sx={{
+            backgroundImage: `url(${banner})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            position: 'relative',
+            '&::before': {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: Colors.primary,
+              backdropFilter: 'blur(10px)',
+              zIndex: 1,
+            }
+          }}>
+            <Box sx={{flex: 0, alignItems: 'initial', position: 'relative', zIndex: 2}}>
               <BannerContent>
                 <BannerText>Website under construction...</BannerText>
               </BannerContent>
             </Box>
             
-            <Box sx={{flex: 1, textAlign: 'end'}}>
+            <Box sx={{flex: 1, textAlign: 'end', position: 'relative', zIndex: 2}}>
               <img src = {imgTravaux} style={{ 
                 height: 'auto', // L'image fait exactement 30px de haut
                 width: '30%'   // La largeur s'ajuste pour ne pas écraser l'image
