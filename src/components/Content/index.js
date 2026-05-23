@@ -27,6 +27,7 @@ export default function Content(){
               right: 0,
               bottom: 0,
               backgroundColor: Colors.primary,
+              opacity: 0.4,
               backdropFilter: 'blur(10px)',
               zIndex: 1,
             }
