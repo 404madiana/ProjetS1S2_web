@@ -14,6 +14,7 @@ export default function Content(){
         <Container maxWidth="false" disableGutters>
           
           <Box display='flex' justifyContent= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary} sx={{
+            /* --- style pour la transparence :V --- */
             backgroundImage: `url(${banner})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
@@ -27,6 +28,7 @@ export default function Content(){
               right: 0,
               bottom: 0,
               backgroundColor: Colors.primary,
+              opacity: 0.8,
               backdropFilter: 'blur(10px)',
               zIndex: 1,
             }
@@ -34,26 +36,6 @@ export default function Content(){
             <BannerContent sx={{ position: 'relative', zIndex: 2 }}>
               <BannerText>Become the ultimate antibody. No more pills. The best cure... is you.</BannerText>
             </BannerContent>
-            {/* --- LE DIVIDER SVG VAGUE --- */}
-            <Box
-              component="svg"
-              viewBox="0 0 1440 320"
-              sx={{
-                position: 'absolute',
-                bottom: -4,
-                left: 0,
-                width: '100%',
-                height: 'auto', // Ajuster la hauteur pour rendre la vague plus/moins prononcée
-                display: 'block', // Important pour éviter les marges fantômes
-                zIndex: 2,
-              }}>
-              {/* Ce chemin (path) dessine la courbe. Le "fill" doit matcher la section du bas */}
-              <path
-                fill={Colors.primary}
-                fillOpacity="1"
-                d="M0,160L80,176C160,192,320,224,480,224C640,224,800,192,960,176C1120,160,1280,160,1360,160L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-              </path>
-            </Box>  
           </Box>
           <Box sx={{ py: 4, px: 20,display: "flex", justifyContent: "flex-end", }}>
             
