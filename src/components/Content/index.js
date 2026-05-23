@@ -14,10 +14,6 @@ export default function Content(){
         <Container maxWidth="false" disableGutters>
           
           <Box display='flex' justifyContent= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary} sx={{
-            backgroundImage: `url(${banner})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
             position: 'relative',
             '&::before': {
               content: '""',
@@ -26,9 +22,22 @@ export default function Content(){
               left: 0,
               right: 0,
               bottom: 0,
+              backgroundImage: `url(${banner})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              filter: 'blur(10px)',
+              zIndex: 0,
+            },
+            '&::after': {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
               backgroundColor: Colors.primary,
               opacity: 0.4,
-              backdropFilter: 'blur(10px)',
               zIndex: 1,
             }
           }}>
@@ -94,10 +103,6 @@ export default function Content(){
             
           </Box>
           <Box display='flex' alignItems= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary} sx={{
-            backgroundImage: `url(${banner})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
             position: 'relative',
             '&::before': {
               content: '""',
@@ -106,8 +111,22 @@ export default function Content(){
               left: 0,
               right: 0,
               bottom: 0,
+              backgroundImage: `url(${banner})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              filter: 'blur(10px)',
+              zIndex: 0,
+            },
+            '&::after': {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
               backgroundColor: Colors.primary,
-              backdropFilter: 'blur(10px)',
+              opacity: 0.4,
               zIndex: 1,
             }
           }}>
