@@ -37,12 +37,19 @@ export default function Content(){
               marginRight: '-40px'
             }}/>
             <Button
-              component="a"
-              href={img2}
-              download="Nano.png"
-              sx={{ my: 3, color: "black", display: "block" , fontSize: '30px'}}>
-                Download game
-            </Button>
+                component="a"
+                href={img2}
+                download="Nano.png"
+                sx={{ 
+                  my: 3, 
+                  color: "white", 
+                  display: "block",
+                  fontFamily: 'PixelGamer',
+                  border: '4px solid white'
+                }}
+              >
+                Download
+              </Button>
           </Box>
           <Box display='flex' justifyContent= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary}
           sx={{
@@ -79,10 +86,7 @@ export default function Content(){
             </BannerContent> 
           </Box>
           <Box sx={{ py: 4, px: 20,display: "flex", justifyContent: "flex-end",
-            '&::before': {
-              content: '""',
-              bgcolor: 'white'
-            }
+            bgcolor: 'white'
           }}>
             
             <Box sx={{
@@ -110,7 +114,7 @@ export default function Content(){
                   my: 3, 
                   color: "white", 
                   display: "block",
-                  fontFamily: 'PixelGamer-Regular',
+                  fontFamily: 'PixelGamer',
                   border: '4px solid white'
                 }}
               >
