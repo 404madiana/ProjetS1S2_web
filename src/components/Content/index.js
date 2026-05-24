@@ -13,12 +13,22 @@ export default function Content(){
 
         <Container maxWidth="false" disableGutters>
           
-          <Box display='flex' justifyContent= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary} sx={{
-            /* --- style pour la transparence :V --- */
-            backgroundImage: `url(${banner})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
+          <Box sx={{ py: 4, px: 20, display: "flex", justifyContent: "center"}}>
+            
+            
+            <Typography variant="h4" fontWeight="bold"> NANO </Typography>
+            
+            <Button
+              component="a"
+              href={img2}
+              download="Nano.png"
+              sx={{ my: 3, color: "black", display: "block" }}>
+                Download game
+            </Button>
+            
+          </Box>
+          <Box display='flex' justifyContent= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary}
+          sx={{
             position: 'relative',
             '&::before': {
               content: '""',
@@ -27,15 +37,28 @@ export default function Content(){
               left: 0,
               right: 0,
               bottom: 0,
+              backgroundImage: `url(${banner})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              filter: 'blur(10px)',
+              zIndex: 0,
+            },
+            '&::after': {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
               backgroundColor: Colors.primary,
-              opacity: 0.8,
-              backdropFilter: 'blur(10px)',
+              opacity: 0.4,
               zIndex: 1,
             }
           }}>
             <BannerContent sx={{ position: 'relative', zIndex: 2 }}>
               <BannerText>Become the ultimate antibody. No more pills. The best cure... is you.</BannerText>
-            </BannerContent>
+            </BannerContent> 
           </Box>
           <Box sx={{ py: 4, px: 20,display: "flex", justifyContent: "flex-end", }}>
             
@@ -75,10 +98,6 @@ export default function Content(){
             
           </Box>
           <Box display='flex' alignItems= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary} sx={{
-            backgroundImage: `url(${banner})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
             position: 'relative',
             '&::before': {
               content: '""',
@@ -87,8 +106,22 @@ export default function Content(){
               left: 0,
               right: 0,
               bottom: 0,
+              backgroundImage: `url(${banner})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              filter: 'blur(10px)',
+              zIndex: 0,
+            },
+            '&::after': {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
               backgroundColor: Colors.primary,
-              backdropFilter: 'blur(10px)',
+              opacity: 0.4,
               zIndex: 1,
             }
           }}>
