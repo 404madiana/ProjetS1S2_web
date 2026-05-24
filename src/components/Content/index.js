@@ -3,6 +3,7 @@ import { Colors } from "../../styles/theme";
 import { BannerContent, BannerText,  } from '../../styles/banner';
 import imgTravaux from "../../assets/img/travaux.png"
 import img2 from "../../assets/img/Nano.png"
+import logo from "../../assets/img/logo.png"
 import banner from "../../assets/img/banner.jpg"
 import Button from '@mui/material/Button';
 
@@ -13,11 +14,12 @@ export default function Content(){
 
         <Container maxWidth="false" disableGutters>
           
-          <Box sx={{ py: 4, px: 20, display: "flex", justifyContent: "center"}}>
-            
-            
-            <Typography variant="h4" fontWeight="bold"> NANO </Typography>
-            
+          <Box sx={{ py: 4, px: 20, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+            <img src={logo} style={{ 
+              height: 'auto',
+              width: '200px',
+              marginBottom: '20px'
+            }}/>
             <Button
               component="a"
               href={img2}
@@ -25,7 +27,6 @@ export default function Content(){
               sx={{ my: 3, color: "black", display: "block" }}>
                 Download game
             </Button>
-            
           </Box>
           <Box display='flex' justifyContent= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary}
           sx={{
