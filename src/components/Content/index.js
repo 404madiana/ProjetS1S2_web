@@ -86,7 +86,9 @@ export default function Content(){
             </BannerContent> 
           </Box>
           <Box sx={{ py: 4, px: 20,display: "flex", justifyContent: "flex-end",
-            bgcolor: 'white'
+            bgcolor: 'white',
+            position: 'relative',
+            zIndex: 1
           }}>
             
             <Box sx={{
