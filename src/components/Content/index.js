@@ -33,14 +33,14 @@ export default function Content(){
             <img src={logo} style={{ 
               height: 'auto',
               width: '50%',
-              marginBottom: '20px',
               marginRight: '-40px'
             }}/>
             <Button
                 component="a"
                 href={img2}
                 download="Nano.png"
-                sx={{ 
+                sx={{
+                  fontSize: '30px',
                   my: 3, 
                   color: "white", 
                   display: "block",
@@ -48,7 +48,7 @@ export default function Content(){
                   border: '4px solid white'
                 }}
               >
-                Download
+                Download Game
               </Button>
           </Box>
           <Box display='flex' justifyContent= 'center' width= '100%' height= '40vh' bgcolor={Colors.primary}
