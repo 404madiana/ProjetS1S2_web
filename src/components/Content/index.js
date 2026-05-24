@@ -14,17 +14,33 @@ export default function Content(){
 
         <Container maxWidth="false" disableGutters>
           
-          <Box sx={{ py: 4, px: 20, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+          <Box sx={{ py: 4, px: 20, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "end",
+            '&::before': {
+              content: '""',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundImage: `url(${banner})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              backgroundAttachment: 'fixed',
+              zIndex: 0,
+            }
+          }}>
             <img src={logo} style={{ 
               height: 'auto',
-              width: '200px',
-              marginBottom: '20px'
+              width: '50%',
+              marginBottom: '20px',
+              marginRight: '-40px'
             }}/>
             <Button
               component="a"
               href={img2}
               download="Nano.png"
-              sx={{ my: 3, color: "black", display: "block" }}>
+              sx={{ my: 3, color: "black", display: "block" , fontSize: '30px'}}>
                 Download game
             </Button>
           </Box>
@@ -54,7 +70,7 @@ export default function Content(){
               right: 0,
               bottom: 0,
               backgroundColor: Colors.primary,
-              opacity: 0.4,
+              opacity: 0.8,
               zIndex: 1,
             }
           }}>
@@ -62,7 +78,9 @@ export default function Content(){
               <BannerText>Become the ultimate antibody. No more pills. The best cure... is you.</BannerText>
             </BannerContent> 
           </Box>
-          <Box sx={{ py: 4, px: 20,display: "flex", justifyContent: "flex-end", }}>
+          <Box sx={{ py: 4, px: 20,display: "flex", justifyContent: "flex-end",
+            bgcolor: 'white'
+          }}>
             
             <Box sx={{
               flex: 1,
@@ -85,7 +103,13 @@ export default function Content(){
                 component="a"
                 href={img2}
                 download="Nano.png"
-                sx={{ my: 3, color: "black", display: "block" }}
+                sx={{ 
+                  my: 3, 
+                  color: "white", 
+                  display: "block",
+                  fontFamily: 'PixelGamer-Regular',
+                  border: '4px solid white'
+                }}
               >
                 Download
               </Button>
