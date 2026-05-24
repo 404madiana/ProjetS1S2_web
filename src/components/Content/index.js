@@ -106,7 +106,13 @@ export default function Content(){
                 component="a"
                 href={img2}
                 download="Nano.png"
-                sx={{ my: 3, color: "black", display: "block" }}
+                sx={{ 
+                  my: 3, 
+                  color: "white", 
+                  display: "block",
+                  fontFamily: 'PixelGamer-Regular',
+                  border: '4px solid white'
+                }}
               >
                 Download
               </Button>
