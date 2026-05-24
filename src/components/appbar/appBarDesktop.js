@@ -55,7 +55,7 @@ function NavList({ pages }) {
           key={label}
           component={Link}
           to={to}
-          sx={{ my: 3, color: "white", display: "block" }}
+          sx={{ my: 3, color: "white", display: "block", fontFamily: 'PixelGamer' }}
         >
           {label}
         </Button>
