@@ -85,7 +85,7 @@ export default function Content(){
               <BannerText>Become the ultimate antibody. No more pills. The best cure... is you.</BannerText>
             </BannerContent> 
           </Box>
-          <Box sx={{ py: 4, px: 20,display: "flex", justifyContent: "flex-end",
+          <Box sx={{ py: 4, display: "flex", justifyContent: "flex-end",
             bgcolor: 'white',
             position: 'relative',
             zIndex: 1
@@ -114,10 +114,10 @@ export default function Content(){
                 download="Nano.png"
                 sx={{ 
                   my: 3, 
-                  color: "white", 
+                  color: "black", 
                   display: "block",
                   fontFamily: 'PixelGamer',
-                  border: '4px solid white'
+                  border: '4px solid black'
                 }}
               >
                 Download
