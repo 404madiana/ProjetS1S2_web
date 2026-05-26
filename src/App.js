@@ -8,6 +8,7 @@ import Banner from './components/Banner';
 /* Pages */
 import Accueil from './components/Content';
 import Download from "./components/Content/download"
+import Contact from "./components/Content/contact"
 import Tutos from "./components/Content/tutorials"
 import Wiki from "./components/Content/wiki"
 import Credits from "./components/Content/chromo_team"
@@ -40,6 +41,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Accueil />} />
               <Route path='/download' element={<Download />} />
+              <Route path='/contact' element={<Contact />} />
               <Route path='/tutorials' element={<Tutos />} />
               <Route path='/wiki' element={<Wiki />} />
               <Route path='/chromo_team' element={<Credits />} />
