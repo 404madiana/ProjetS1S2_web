@@ -39,14 +39,14 @@ export const TitleStyles = {
   mainTitle: {
     fontSize: '2rem',
     fontWeight: 'bold',
-    fontFamily: 'PixelGamer',
+    fontFamily: 'Pixelcraft',
     color: 'black'
   },
 
   sectionTitle: {
     fontSize: '1.5rem',
     fontWeight: 'bold',
-    fontFamily: 'PixelGamer',
+    fontFamily: 'Pixelcraft',
     color: 'black'
   }
 };
