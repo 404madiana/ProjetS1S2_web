@@ -6,11 +6,9 @@ import Container from '@mui/material/Container';
 import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
 
-// mascotte du jeu :)
 import ChromIcon from "../../assets/img/chrom.png";
 
 import { AppbarHeader, NavBox } from '../../styles/appbar';
-// import NavList from '../../styles/appbar';
 
 const pages = [
   { label: "Home", to: "/" },
@@ -22,15 +20,13 @@ const pages = [
 
 export default function AppbarDesktop({matches}){
 
-const [anchorElNav] = React.useState(null);
-
   return (
     <AppBar id='my-appbar' position="sticky">
       <Container maxWidth="breakpoint">
         <Toolbar disableGutters>
           <a href="/" sx={{width: "10%"}}>
             <Button sx={{ my: 0 }}>
-              <img src = {ChromIcon} style={{ 
+              <img src={ChromIcon} alt="Chromo Icon" style={{ 
                 height: 'auto',
                 width: '5%',
                 marginRight: '10px'}}/>
